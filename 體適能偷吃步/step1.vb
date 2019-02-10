@@ -39,7 +39,7 @@
         Else
             If MsgBox("偵測到新版本 v" + newestversion + vbNewLine + "是否下載最新版輔助?", 4 + 64, "提示") = vbYes Then
 
-                Process.Start("https://raw.githubusercontent.com/Suifeng0214/SignUpHelper/SignUpHelper.exe")
+                Process.Start("https://github.com/Suifeng0214/SignUpHelper/raw/master/SignUpHelper.exe")
             End If
         End If
         Label5.Text = "本軟體為免費版本" + vbNewLine + "請勿擅自販售!" + vbNewLine + "=-=-=-=-=-=-=-=-=使用說明=-=-=-=-=-=-=-=-=" + vbNewLine + vbNewLine +
