@@ -21,14 +21,26 @@
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim request As System.Net.HttpWebRequest = System.Net.HttpWebRequest.Create("")
-        Dim response As System.Net.HttpWebResponse = request.GetResponse
-        Dim sr As System.IO.Stream
-
+        '測試網路連線
         Dim net As Boolean = My.Computer.Network.IsAvailable
         If net.ToString = False Then
             MsgBox("請連上網際網路後再重試！", 0 + 48, "提示")
             Me.Close()
+        End If
+        '檢查更新功能
+        Dim request As System.Net.HttpWebRequest = System.Net.HttpWebRequest.Create("https://raw.githubusercontent.com/Suifeng0214/SignUpHelper/master/version.txt")
+        Dim response As System.Net.HttpWebResponse = request.GetResponse
+        Dim sr As System.IO.StreamReader = New System.IO.StreamReader(response.GetResponseStream)
+
+        Dim newestversion As String = sr.ReadToEnd
+        Dim currentversion As String = Application.ProductVersion
+        If newestversion.ToString = currentversion.ToString Then
+            MsgBox("目前是最新版本！", 0 + 64, "提示")
+        Else
+            If MsgBox("偵測到新版本 v" + newestversion + vbNewLine + "是否下載最新版輔助?", 4 + 64, "提示") = vbYes Then
+
+                Process.Start("https://raw.githubusercontent.com/Suifeng0214/SignUpHelper/SignUpHelper.exe")
+            End If
         End If
         Label5.Text = "本軟體為免費版本" + vbNewLine + "請勿擅自販售!" + vbNewLine + "=-=-=-=-=-=-=-=-=使用說明=-=-=-=-=-=-=-=-=" + vbNewLine + vbNewLine +
             "請先至體適能官網註冊帳密~" + vbNewLine + vbNewLine + "=-=-=-=-=-=-=-=-=版本內容=-=-=-=-=-=-=-=-=" + vbNewLine + vbNewLine + "提醒：" + vbNewLine + "在 step.3 裡的《通訊地址》及《連絡地址》技術尚未完成，還請使用者見諒，『目前僅開放台南市歸仁區』，其他地區需在填入之後【手動】調整《報名頁面》內的相關設置！"
