@@ -1,4 +1,5 @@
 ﻿Public Class step1
+    Dim a As Boolean
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If TextBox1.Text = "" Or TextBox2.Text = "" Or TextBox3.Text = "" Then
             MsgBox("請確實輸入完整!", 0 + 48, "提示")
@@ -38,10 +39,10 @@
             MsgBox("目前是最新版本！", 0 + 64, "提示")
         Else
             If MsgBox("偵測到新版本 v" + newestversion + vbNewLine + "是否下載最新版輔助?", 4 + 64, "提示") = vbYes Then
-
-                Process.Start("https://github.com/Suifeng0214/SignUpHelper/raw/master/SignUpHelper.exe")
+                WebBrowser2.Navigate("https://github.com/Suifeng0214/SignUpHelper/raw/master/SignUpHelper.exe")
             End If
         End If
+
         Label5.Text = "本軟體為免費版本" + vbNewLine + "請勿擅自販售!" + vbNewLine + "=-=-=-=-=-=-=-=-=使用說明=-=-=-=-=-=-=-=-=" + vbNewLine + vbNewLine +
             "請先至體適能官網註冊帳密~" + vbNewLine + vbNewLine + "=-=-=-=-=-=-=-=-=版本內容=-=-=-=-=-=-=-=-=" + vbNewLine + vbNewLine + "提醒：" + vbNewLine + "在 step.3 裡的《通訊地址》及《連絡地址》技術尚未完成，還請使用者見諒，『目前僅開放台南市歸仁區』，其他地區需在填入之後【手動】調整《報名頁面》內的相關設置！"
     End Sub

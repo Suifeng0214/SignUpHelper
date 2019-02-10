@@ -137,7 +137,6 @@ Partial Class step1
         '
         'WebBrowser2
         '
-        Me.WebBrowser2.AllowNavigation = False
         Me.WebBrowser2.AllowWebBrowserDrop = False
         Me.WebBrowser2.IsWebBrowserContextMenuEnabled = False
         Me.WebBrowser2.Location = New System.Drawing.Point(343, -175)
