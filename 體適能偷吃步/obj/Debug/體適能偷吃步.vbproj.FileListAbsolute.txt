@@ -1,0 +1,15 @@
+c:\users\wind\documents\visual studio 2015\Projects\體適能偷吃步\體適能偷吃步\bin\Debug\體適能偷吃步.exe.config
+c:\users\wind\documents\visual studio 2015\Projects\體適能偷吃步\體適能偷吃步\bin\Debug\體適能偷吃步.exe
+c:\users\wind\documents\visual studio 2015\Projects\體適能偷吃步\體適能偷吃步\bin\Debug\體適能偷吃步.pdb
+c:\users\wind\documents\visual studio 2015\Projects\體適能偷吃步\體適能偷吃步\bin\Debug\體適能偷吃步.xml
+c:\users\wind\documents\visual studio 2015\Projects\體適能偷吃步\體適能偷吃步\obj\Debug\體適能偷吃步.vbprojResolveAssemblyReference.cache
+c:\users\wind\documents\visual studio 2015\Projects\體適能偷吃步\體適能偷吃步\obj\Debug\體適能偷吃步.Resources.resources
+c:\users\wind\documents\visual studio 2015\Projects\體適能偷吃步\體適能偷吃步\obj\Debug\體適能偷吃步.vbproj.GenerateResource.Cache
+c:\users\wind\documents\visual studio 2015\Projects\體適能偷吃步\體適能偷吃步\obj\Debug\體適能偷吃步.exe
+c:\users\wind\documents\visual studio 2015\Projects\體適能偷吃步\體適能偷吃步\obj\Debug\體適能偷吃步.xml
+c:\users\wind\documents\visual studio 2015\Projects\體適能偷吃步\體適能偷吃步\obj\Debug\體適能偷吃步.pdb
+c:\users\wind\documents\visual studio 2015\Projects\體適能偷吃步\體適能偷吃步\obj\Debug\體適能偷吃步.step1.resources
+c:\users\wind\documents\visual studio 2015\Projects\體適能偷吃步\體適能偷吃步\obj\Debug\體適能偷吃步.step3.resources
+c:\users\wind\documents\visual studio 2015\Projects\體適能偷吃步\體適能偷吃步\obj\Debug\體適能偷吃步.step4.resources
+c:\users\wind\documents\visual studio 2015\Projects\體適能偷吃步\體適能偷吃步\obj\Debug\體適能偷吃步.step2.resources
+C:\Users\Wind\documents\visual studio 2015\Projects\體適能偷吃步\體適能偷吃步\bin\Debug\體適能報名輔助.exe.config

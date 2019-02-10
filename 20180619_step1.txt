@@ -1,0 +1,82 @@
+Public Class step1
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        If TextBox1.Text = "" Or TextBox2.Text = "" Or TextBox3.Text = "" Then
+            MsgBox("請確實輸入完整!", 0 + 48, "提示")
+        Else
+            Try
+                WebBrowser1.Document.GetElementById("username").SetAttribute("value", TextBox1.Text) '帳號'
+                WebBrowser1.Document.GetElementById("userpass").SetAttribute("value", TextBox2.Text)  '密碼'
+                WebBrowser1.Document.GetElementById("loginValidCode").SetAttribute("value", TextBox3.Text)  '驗證碼'
+            Catch
+                MsgBox("發生錯誤!", 0 + 48, "提示")
+            End Try
+            Try
+
+                WebBrowser1.Document.GetElementById("userLogin-button").DomElement.click() '登入'
+            Catch
+                MsgBox("登入失敗,稍後程式自動重啟", 0 + 48, “提示”)
+                Application.Restart()
+            End Try
+        End If
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim net As Boolean = My.Computer.Network.IsAvailable
+        If net.ToString = False Then
+            MsgBox("請連上網際網路後再重試！", 0 + 48, "提示")
+            Me.Close()
+        Else
+            MsgBox("歡迎使用本輔助程式！" & vbNewLine + "作者:隨風Suifeng" & vbNewLine & vbNewLine + "祝體適能測驗順利！", 0 + 64, "程式簡介")
+        End If
+        Timer1.Start()
+
+    End Sub
+
+    Private Sub WebBrowser1_DocumentCompleted(sender As Object, e As WebBrowserDocumentCompletedEventArgs) Handles WebBrowser1.DocumentCompleted
+        WebBrowser1.Document.Window.ScrollTo(50, 285) '把捲軸移至(x,y)
+        If WebBrowser1.Url.ToString = "http://www.fitness.org.tw/exam/quizmain.php" Then '如果已經登入,跳轉到第二表單
+            step2.Show()
+            Me.Close()
+        End If
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click '重新產生認證碼 '按鈕
+        For Each a In WebBrowser1.Document.Body.All
+            For Each link In WebBrowser1.Document.Links
+                If link.GetAttribute("href") = "http://www.fitness.org.tw/exam/login.php#" And link.innertext = "重新產生認證碼" Then
+                    link.InvokeMember("click")
+                End If
+            Next
+        Next
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        'Chr(34) =  "
+        Dim x As String = "<tr><th scope=" + Chr(34) + "col" + Chr(34)
+        Try
+            For Each a As HtmlElement In WebBrowser2.Document.GetElementsByTagName("tbody")
+                If Mid(a.InnerHtml, 1, 13) = "<tr><th scope" Then
+                    a.InnerText = Replace(a.InnerHtml, x, "")
+
+                End If
+            Next
+        Catch
+        End Try
+        Timer1.Stop() '只執行一次
+    End Sub
+    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+        '宣告
+        Dim stl As String
+        Dim save As String
+        Dim save2 As String
+        For Each a As HtmlElement In WebBrowser2.Document.GetElementsByTagName("body")
+            stl = InStr(a.InnerHtml, "<div id=" + Chr(34) + "quizDesc") '讀取第一個編號
+            save = Mid(a.InnerHtml, stl + 17, 4) '儲存第一編號為save
+            '-----
+            save2 = a.InnerHtml
+            save2 = Mid(save2, stl + 21, Len(save2) - (stl + 21)) '取1994後的所有html
+            stl = InStr(save2, "<div id=" + Chr(34) + "quizDesc") '重新搜尋第二個quizDesc位置
+            save2 = Mid(save2, stl + 17, 4) 'save2為第二個編號
+        Next
+    End Sub
+End Class
