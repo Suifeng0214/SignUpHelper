@@ -39,7 +39,7 @@
             MsgBox("目前是最新版本！", 0 + 64, "提示")
         Else
             If MsgBox("偵測到新版本 v" + newestversion + vbNewLine + "是否下載最新版輔助?", 4 + 64, "提示") = vbYes Then
-                WebBrowser2.Navigate("https://github.com/Suifeng0214/SignUpHelper/raw/master/SignUpHelper.exe")
+                Process.Start("https://github.com/Suifeng0214/SignUpHelper/raw/master/SignUpHelper.exe")
             End If
         End If
 
