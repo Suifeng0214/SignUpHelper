@@ -195,9 +195,8 @@ Partial Class step1
         Me.Label6.ForeColor = System.Drawing.Color.Red
         Me.Label6.Location = New System.Drawing.Point(14, 308)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(168, 16)
+        Me.Label6.Size = New System.Drawing.Size(0, 16)
         Me.Label6.TabIndex = 15
-        Me.Label6.Text = "目前版本: v1.0.0 Beta版"
         '
         'Label5
         '
