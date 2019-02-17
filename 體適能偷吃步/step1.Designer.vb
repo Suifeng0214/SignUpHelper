@@ -150,8 +150,7 @@ Partial Class step1
         '
         'Timer1
         '
-        Me.Timer1.Enabled = True
-        Me.Timer1.Interval = 3000
+        Me.Timer1.Interval = 500
         '
         'GroupBox1
         '
@@ -196,9 +195,9 @@ Partial Class step1
         Me.Label6.ForeColor = System.Drawing.Color.Red
         Me.Label6.Location = New System.Drawing.Point(14, 308)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(156, 16)
+        Me.Label6.Size = New System.Drawing.Size(168, 16)
         Me.Label6.TabIndex = 15
-        Me.Label6.Text = "目前版本: v1.0 Beta版"
+        Me.Label6.Text = "目前版本: v1.0.0 Beta版"
         '
         'Label5
         '

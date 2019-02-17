@@ -32,18 +32,18 @@ Partial Class step2
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(166, 12)
+        Me.Button1.Location = New System.Drawing.Point(156, 14)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(152, 39)
+        Me.Button1.Size = New System.Drawing.Size(131, 39)
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "進入報名"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(8, 14)
+        Me.Button2.Location = New System.Drawing.Point(17, 14)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(152, 39)
+        Me.Button2.Size = New System.Drawing.Size(131, 39)
         Me.Button2.TabIndex = 2
         Me.Button2.Text = "開啟報名輔助"
         Me.Button2.UseVisualStyleBackColor = True
@@ -61,7 +61,7 @@ Partial Class step2
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(41, 80)
+        Me.Label1.Location = New System.Drawing.Point(77, 80)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(98, 12)
         Me.Label1.TabIndex = 5
@@ -70,29 +70,29 @@ Partial Class step2
         'Button3
         '
         Me.Button3.ForeColor = System.Drawing.Color.Blue
-        Me.Button3.Location = New System.Drawing.Point(324, 12)
+        Me.Button3.Location = New System.Drawing.Point(295, 14)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(42, 39)
+        Me.Button3.Size = New System.Drawing.Size(131, 39)
         Me.Button3.TabIndex = 6
-        Me.Button3.Text = "登出"
+        Me.Button3.Text = "登出 / 關閉程式"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.Color.Fuchsia
-        Me.Label2.Location = New System.Drawing.Point(15, 57)
+        Me.Label2.Location = New System.Drawing.Point(18, 57)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(347, 12)
+        Me.Label2.Size = New System.Drawing.Size(407, 12)
         Me.Label2.TabIndex = 7
-        Me.Label2.Text = "點擊順序=============================================＞＞"
+        Me.Label2.Text = "點擊順序=======================================================＞＞"
         '
         'step2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.ClientSize = New System.Drawing.Size(371, 104)
+        Me.ClientSize = New System.Drawing.Size(443, 104)
         Me.ControlBox = False
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button3)

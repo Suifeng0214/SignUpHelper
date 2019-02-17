@@ -16,7 +16,6 @@
                     link.InvokeMember("click")
                     step4.Close()
                     step3.Close()
-                    step1.Show()
                     Me.Close()
                 End If
             Next
@@ -32,5 +31,9 @@
             End If
         Next
 
+    End Sub
+
+    Private Sub step2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        step1.Timer1.Stop()
     End Sub
 End Class

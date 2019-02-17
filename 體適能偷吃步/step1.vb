@@ -12,8 +12,8 @@
                 MsgBox("發生錯誤!", 0 + 48, "提示")
             End Try
             Try
-
                 WebBrowser1.Document.GetElementById("userLogin-button").DomElement.click() '登入'
+
             Catch
                 MsgBox("登入失敗,稍後程式自動重啟", 0 + 48, “提示”)
                 Application.Restart()
@@ -43,21 +43,20 @@
             End If
         End If
 
-        Label5.Text = "本軟體為免費版本" + vbNewLine + "請勿擅自販售!" + vbNewLine + "=-=-=-=-=-=-=-=-=使用說明=-=-=-=-=-=-=-=-=" + vbNewLine + vbNewLine +
-            "請先至體適能官網註冊帳密~" + vbNewLine + vbNewLine + "=-=-=-=-=-=-=-=-=版本內容=-=-=-=-=-=-=-=-=" + vbNewLine + vbNewLine + "提醒：" + vbNewLine + "在 step.3 裡的《通訊地址》及《連絡地址》技術尚未完成，還請使用者見諒，『目前僅開放台南市歸仁區』，其他地區需在填入之後【手動】調整《報名頁面》內的相關設置！"
+        Label5.Text = "本軟體為免費版本" + vbNewLine + "請勿擅自販售!" + vbNewLine + vbNewLine + "=-=-=-=-=-=-=-=-=使用說明=-=-=-=-=-=-=-=-=" + vbNewLine + vbNewLine +
+            "請先至體適能官網註冊帳密~" + vbNewLine + vbNewLine + "＊註冊完後詳細教學請觀看教學影片" + vbNewLine + vbNewLine + vbNewLine + "=-=-=-=-=-=-=-=-=版本內容=-=-=-=-=-=-=-=-=" + vbNewLine + vbNewLine + "無"
     End Sub
 
     Private Sub WebBrowser1_DocumentCompleted(sender As Object, e As WebBrowserDocumentCompletedEventArgs) Handles WebBrowser1.DocumentCompleted
         WebBrowser1.Document.Window.ScrollTo(50, 285) '把捲軸移至(x,y)
+        Timer1.Start()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click '重新產生認證碼 '按鈕
-        For Each a In WebBrowser1.Document.Body.All
-            For Each link In WebBrowser1.Document.Links
-                If link.GetAttribute("href") = "http://www.fitness.org.tw/exam/login.php#" And link.innertext = "重新產生認證碼" Then
-                    link.InvokeMember("click")
-                End If
-            Next
+        For Each link In WebBrowser1.Document.Links
+            If link.GetAttribute("href") = "http://www.fitness.org.tw/exam/login.php#" And link.innertext = "重新產生認證碼" Then
+                link.InvokeMember("click")
+            End If
         Next
     End Sub
 
