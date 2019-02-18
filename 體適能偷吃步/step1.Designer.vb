@@ -39,6 +39,8 @@ Partial Class step1
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -154,7 +156,6 @@ Partial Class step1
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.LinkLabel1)
         Me.GroupBox1.Controls.Add(Me.WebBrowser1)
         Me.GroupBox1.Font = New System.Drawing.Font("新細明體", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.Blue
@@ -168,7 +169,7 @@ Partial Class step1
         'LinkLabel1
         '
         Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Location = New System.Drawing.Point(8, 206)
+        Me.LinkLabel1.Location = New System.Drawing.Point(242, 28)
         Me.LinkLabel1.Name = "LinkLabel1"
         Me.LinkLabel1.Size = New System.Drawing.Size(72, 13)
         Me.LinkLabel1.TabIndex = 7
@@ -177,6 +178,9 @@ Partial Class step1
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.Label4)
+        Me.GroupBox2.Controls.Add(Me.LinkLabel1)
+        Me.GroupBox2.Controls.Add(Me.LinkLabel2)
         Me.GroupBox2.Controls.Add(Me.Label6)
         Me.GroupBox2.Controls.Add(Me.Label5)
         Me.GroupBox2.Font = New System.Drawing.Font("新細明體", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
@@ -207,6 +211,24 @@ Partial Class step1
         Me.Label5.Size = New System.Drawing.Size(300, 305)
         Me.Label5.TabIndex = 15
         '
+        'LinkLabel2
+        '
+        Me.LinkLabel2.AutoSize = True
+        Me.LinkLabel2.Location = New System.Drawing.Point(255, 48)
+        Me.LinkLabel2.Name = "LinkLabel2"
+        Me.LinkLabel2.Size = New System.Drawing.Size(59, 13)
+        Me.LinkLabel2.TabIndex = 16
+        Me.LinkLabel2.TabStop = True
+        Me.LinkLabel2.Text = "問題回報"
+        '
+        'Label4
+        '
+        Me.Label4.Image = Global.體適能報名輔助.My.Resources.Resources.cc_by_nc_sa_88x31
+        Me.Label4.Location = New System.Drawing.Point(148, 23)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(94, 42)
+        Me.Label4.TabIndex = 17
+        '
         'step1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
@@ -229,7 +251,6 @@ Partial Class step1
         Me.Name = "step1"
         Me.Text = "Step.1"
         Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
@@ -252,4 +273,6 @@ Partial Class step1
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents LinkLabel2 As LinkLabel
+    Friend WithEvents Label4 As Label
 End Class

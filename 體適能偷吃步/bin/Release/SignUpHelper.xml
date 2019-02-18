@@ -22,5 +22,10 @@ SignUpHelper
   使用這個強類型資源類別的資源查閱。
 </summary>
 </member>
+<member name="P:體適能報名輔助.My.Resources.Resources.cc_by_nc_sa_88x31">
+<summary>
+  查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+</summary>
+</member>
 </members>
 </doc>

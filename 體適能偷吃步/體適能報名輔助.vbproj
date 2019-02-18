@@ -184,6 +184,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\cc-by-nc-sa-88x31.png" />
+    <None Include="Resources\by-nc-sa %281%29.png" />
+    <None Include="by-nc-sa.png" />
     <Content Include="icon.ico" />
     <Content Include="logo01.ico" />
   </ItemGroup>

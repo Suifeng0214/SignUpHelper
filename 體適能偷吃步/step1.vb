@@ -106,4 +106,8 @@
             Me.Close()
         End If
     End Sub
+
+    Private Sub LinkLabel2_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel2.LinkClicked
+        Process.Start("https://goo.gl/forms/ODva9ym8ZC6bSQ6i1")
+    End Sub
 End Class
