@@ -37,10 +37,10 @@ Partial Class step1
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -192,6 +192,24 @@ Partial Class step1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "軟體介紹"
         '
+        'Label4
+        '
+        Me.Label4.Image = Global.體適能報名輔助.My.Resources.Resources.cc_by_nc_nd_88x31
+        Me.Label4.Location = New System.Drawing.Point(148, 23)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(94, 42)
+        Me.Label4.TabIndex = 17
+        '
+        'LinkLabel2
+        '
+        Me.LinkLabel2.AutoSize = True
+        Me.LinkLabel2.Location = New System.Drawing.Point(255, 48)
+        Me.LinkLabel2.Name = "LinkLabel2"
+        Me.LinkLabel2.Size = New System.Drawing.Size(59, 13)
+        Me.LinkLabel2.TabIndex = 16
+        Me.LinkLabel2.TabStop = True
+        Me.LinkLabel2.Text = "問題回報"
+        '
         'Label6
         '
         Me.Label6.AutoSize = True
@@ -210,24 +228,6 @@ Partial Class step1
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(300, 305)
         Me.Label5.TabIndex = 15
-        '
-        'LinkLabel2
-        '
-        Me.LinkLabel2.AutoSize = True
-        Me.LinkLabel2.Location = New System.Drawing.Point(255, 48)
-        Me.LinkLabel2.Name = "LinkLabel2"
-        Me.LinkLabel2.Size = New System.Drawing.Size(59, 13)
-        Me.LinkLabel2.TabIndex = 16
-        Me.LinkLabel2.TabStop = True
-        Me.LinkLabel2.Text = "問題回報"
-        '
-        'Label4
-        '
-        Me.Label4.Image = Global.體適能報名輔助.My.Resources.Resources.cc_by_nc_sa_88x31
-        Me.Label4.Location = New System.Drawing.Point(148, 23)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(94, 42)
-        Me.Label4.TabIndex = 17
         '
         'step1
         '

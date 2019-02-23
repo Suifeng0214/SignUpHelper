@@ -63,9 +63,9 @@ Namespace My.Resources
         '''<summary>
         '''  查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         '''</summary>
-        Friend ReadOnly Property cc_by_nc_sa_88x31() As System.Drawing.Bitmap
+        Friend ReadOnly Property cc_by_nc_nd_88x31() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("cc-by-nc-sa-88x31", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("cc_by_nc_nd_88x31", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

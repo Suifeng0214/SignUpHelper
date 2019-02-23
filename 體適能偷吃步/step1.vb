@@ -29,23 +29,28 @@
             Me.Close()
         End If
         '檢查更新功能
-        Dim request As System.Net.HttpWebRequest = System.Net.HttpWebRequest.Create("https://raw.githubusercontent.com/Suifeng0214/SignUpHelper/master/version.txt")
-        Dim response As System.Net.HttpWebResponse = request.GetResponse
-        Dim sr As System.IO.StreamReader = New System.IO.StreamReader(response.GetResponseStream)
+        Try
+            Dim request As System.Net.HttpWebRequest = System.Net.HttpWebRequest.Create("https://raw.githubusercontent.com/Suifeng0214/SignUpHelper/master/version.txt")
+            Dim response As System.Net.HttpWebResponse = request.GetResponse
+            Dim sr As System.IO.StreamReader = New System.IO.StreamReader(response.GetResponseStream)
 
-        Dim newestversion As String = sr.ReadToEnd
-        Dim currentversion As String = Application.ProductVersion
-        If newestversion.Contains(currentversion) Then
-            MsgBox("目前是最新版本！", 0 + 64, "提示")
-        Else
-            If MsgBox("偵測到新版本 v" + newestversion + vbNewLine + "是否下載最新版輔助?", 4 + 64, "提示") = vbYes Then
-                Process.Start("https://github.com/Suifeng0214/SignUpHelper/raw/master/SignUpHelper.exe")
+            Dim newestversion As String = sr.ReadToEnd
+            Dim currentversion As String = Application.ProductVersion
+            If newestversion.Contains(currentversion) Then
+                MsgBox("目前是最新版本！", 0 + 64, "提示")
+            Else
+                If MsgBox("偵測到新版本 v" + newestversion + vbNewLine + "是否下載最新版輔助?", 4 + 64, "提示") = vbYes Then
+                    Process.Start("https://github.com/Suifeng0214/SignUpHelper/raw/master/SignUpHelper.exe")
+                End If
             End If
-        End If
 
-        Label5.Text = "本軟體為免費版本" + vbNewLine + "請勿擅自販售!" + vbNewLine + vbNewLine + "=-=-=-=-=-=-=-=-=使用說明=-=-=-=-=-=-=-=-=" + vbNewLine + vbNewLine +
+
+            Label5.Text = "本軟體為免費版本" + vbNewLine + "請勿擅自販售!" + vbNewLine + vbNewLine + "=-=-=-=-=-=-=-=-=使用說明=-=-=-=-=-=-=-=-=" + vbNewLine + vbNewLine +
             "請先至體適能官網註冊帳密~" + vbNewLine + vbNewLine + "＊註冊完後詳細教學請觀看教學影片" + vbNewLine + vbNewLine + vbNewLine + "=-=-=-=-=-=-=-=-=版本內容=-=-=-=-=-=-=-=-=" + vbNewLine + vbNewLine + "無"
-        Label6.Text = "目前版本: v" + currentversion + ""
+            Label6.Text = "目前版本: v" + currentversion + ""
+        Catch
+            MsgBox("檢查更新失敗！", 0 + 48, "提示")
+        End Try
     End Sub
 
     Private Sub WebBrowser1_DocumentCompleted(sender As Object, e As WebBrowserDocumentCompletedEventArgs) Handles WebBrowser1.DocumentCompleted
