@@ -238,11 +238,12 @@ Partial Class step1
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.體適能報名輔助.My.Resources.Resources.cc_by_nc_nd_88x31
-        Me.PictureBox1.Location = New System.Drawing.Point(152, 20)
+        Me.PictureBox1.ImageLocation = "https://raw.githubusercontent.com/Suifeng0214/SignUpHelper/master/cc-by-nc-nd-88x" &
+    "31.png"
+        Me.PictureBox1.Location = New System.Drawing.Point(152, 18)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(91, 39)
-        Me.PictureBox1.TabIndex = 18
+        Me.PictureBox1.Size = New System.Drawing.Size(91, 32)
+        Me.PictureBox1.TabIndex = 17
         Me.PictureBox1.TabStop = False
         '
         'step1
