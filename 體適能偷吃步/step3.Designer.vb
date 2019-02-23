@@ -61,9 +61,9 @@ Partial Class step3
         Me.ComboBox8 = New System.Windows.Forms.ComboBox()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.TextBox12 = New System.Windows.Forms.TextBox()
         Me.Label19 = New System.Windows.Forms.Label()
@@ -447,6 +447,16 @@ Partial Class step3
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "緊急聯絡人資料"
         '
+        'GroupBox4
+        '
+        Me.GroupBox4.Font = New System.Drawing.Font("新細明體", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.GroupBox4.Location = New System.Drawing.Point(0, 0)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(578, 147)
+        Me.GroupBox4.TabIndex = 38
+        Me.GroupBox4.TabStop = False
+        Me.GroupBox4.Text = "緊急聯絡人資料"
+        '
         'GroupBox2
         '
         Me.GroupBox2.Location = New System.Drawing.Point(12, 15)
@@ -458,21 +468,13 @@ Partial Class step3
         '
         'GroupBox3
         '
+        Me.GroupBox3.Font = New System.Drawing.Font("新細明體", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.GroupBox3.Location = New System.Drawing.Point(12, 15)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(578, 273)
         Me.GroupBox3.TabIndex = 39
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "檢測者資料"
-        '
-        'GroupBox4
-        '
-        Me.GroupBox4.Location = New System.Drawing.Point(0, 0)
-        Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(578, 147)
-        Me.GroupBox4.TabIndex = 38
-        Me.GroupBox4.TabStop = False
-        Me.GroupBox4.Text = "緊急聯絡人資料"
         '
         'Label18
         '

@@ -36,13 +36,14 @@ Partial Class step1
         Me.WebBrowser2 = New System.Windows.Forms.WebBrowser()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -63,7 +64,7 @@ Partial Class step1
         Me.TextBox1.ForeColor = System.Drawing.SystemColors.WindowText
         Me.TextBox1.Location = New System.Drawing.Point(102, 26)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(188, 27)
+        Me.TextBox1.Size = New System.Drawing.Size(193, 27)
         Me.TextBox1.TabIndex = 2
         '
         'Label1
@@ -88,11 +89,11 @@ Partial Class step1
         '
         'TextBox2
         '
-        Me.TextBox2.Font = New System.Drawing.Font("新細明體", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.TextBox2.Font = New System.Drawing.Font("新細明體", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.TextBox2.ForeColor = System.Drawing.SystemColors.WindowText
         Me.TextBox2.Location = New System.Drawing.Point(102, 62)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(188, 27)
+        Me.TextBox2.Size = New System.Drawing.Size(192, 23)
         Me.TextBox2.TabIndex = 5
         Me.TextBox2.UseSystemPasswordChar = True
         '
@@ -118,7 +119,7 @@ Partial Class step1
         Me.TextBox3.ForeColor = System.Drawing.SystemColors.WindowText
         Me.TextBox3.Location = New System.Drawing.Point(102, 98)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(188, 27)
+        Me.TextBox3.Size = New System.Drawing.Size(192, 27)
         Me.TextBox3.TabIndex = 8
         '
         'Label3
@@ -144,7 +145,7 @@ Partial Class step1
         '
         Me.WebBrowser2.AllowWebBrowserDrop = False
         Me.WebBrowser2.IsWebBrowserContextMenuEnabled = False
-        Me.WebBrowser2.Location = New System.Drawing.Point(343, -175)
+        Me.WebBrowser2.Location = New System.Drawing.Point(339, -175)
         Me.WebBrowser2.MinimumSize = New System.Drawing.Size(20, 20)
         Me.WebBrowser2.Name = "WebBrowser2"
         Me.WebBrowser2.Size = New System.Drawing.Size(246, 981)
@@ -159,6 +160,7 @@ Partial Class step1
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.WebBrowser1)
         Me.GroupBox1.Font = New System.Drawing.Font("新細明體", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
@@ -169,6 +171,18 @@ Partial Class step1
         Me.GroupBox1.TabIndex = 13
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "登入"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.White
+        Me.Label7.Font = New System.Drawing.Font("新細明體", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.Black
+        Me.Label7.Location = New System.Drawing.Point(210, 177)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(73, 12)
+        Me.Label7.TabIndex = 7
+        Me.Label7.Text = "(不分大小寫)"
         '
         'LinkLabel1
         '
@@ -195,6 +209,16 @@ Partial Class step1
         Me.GroupBox2.TabIndex = 15
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "軟體介紹"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.體適能報名輔助.My.Resources.Resources.cc_by_nc_nd_88x31
+        Me.PictureBox1.ImageLocation = ""
+        Me.PictureBox1.Location = New System.Drawing.Point(152, 19)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(91, 32)
+        Me.PictureBox1.TabIndex = 17
+        Me.PictureBox1.TabStop = False
         '
         'LinkLabel2
         '
@@ -225,34 +249,24 @@ Partial Class step1
         Me.Label5.Size = New System.Drawing.Size(300, 305)
         Me.Label5.TabIndex = 15
         '
-        'Label7
+        'Label4
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.BackColor = System.Drawing.Color.White
-        Me.Label7.Font = New System.Drawing.Font("新細明體", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.Black
-        Me.Label7.Location = New System.Drawing.Point(210, 177)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(73, 12)
-        Me.Label7.TabIndex = 7
-        Me.Label7.Text = "(不分大小寫)"
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.ImageLocation = "https://raw.githubusercontent.com/Suifeng0214/SignUpHelper/master/cc-by-nc-nd-88x" &
-    "31.png"
-        Me.PictureBox1.Location = New System.Drawing.Point(152, 19)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(91, 32)
-        Me.PictureBox1.TabIndex = 17
-        Me.PictureBox1.TabStop = False
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.White
+        Me.Label4.Font = New System.Drawing.Font("新細明體", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.Black
+        Me.Label4.Location = New System.Drawing.Point(10, 20)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(37, 12)
+        Me.Label4.TabIndex = 8
+        Me.Label4.Text = "(大寫)"
         '
         'step1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.ClientSize = New System.Drawing.Size(574, 589)
+        Me.ClientSize = New System.Drawing.Size(586, 589)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.WebBrowser2)
         Me.Controls.Add(Me.Button2)
@@ -297,4 +311,5 @@ Partial Class step1
     Friend WithEvents LinkLabel2 As LinkLabel
     Friend WithEvents Label7 As Label
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Label4 As Label
 End Class

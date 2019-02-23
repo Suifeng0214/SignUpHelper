@@ -51,11 +51,11 @@
         Catch
             MsgBox("檢查更新失敗！", 0 + 48, "提示")
         End Try
+        Timer1.Start()
     End Sub
 
     Private Sub WebBrowser1_DocumentCompleted(sender As Object, e As WebBrowserDocumentCompletedEventArgs) Handles WebBrowser1.DocumentCompleted
         WebBrowser1.Document.Window.ScrollTo(50, 285) '把捲軸移至(x,y)
-        Timer1.Start()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click '重新產生認證碼 '按鈕

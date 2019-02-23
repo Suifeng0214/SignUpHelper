@@ -183,6 +183,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\cc-by-nc-nd-88x311.png" />
     <None Include="Resources\cc-by-nc-nd-88x31.png" />
     <None Include="Resources\cc-by-nc-sa-88x31.png" />
     <None Include="Resources\by-nc-sa %281%29.png" />
