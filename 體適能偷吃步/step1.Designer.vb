@@ -37,13 +37,14 @@ Partial Class step1
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
@@ -171,7 +172,7 @@ Partial Class step1
         'LinkLabel1
         '
         Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Location = New System.Drawing.Point(242, 28)
+        Me.LinkLabel1.Location = New System.Drawing.Point(242, 20)
         Me.LinkLabel1.Name = "LinkLabel1"
         Me.LinkLabel1.Size = New System.Drawing.Size(72, 13)
         Me.LinkLabel1.TabIndex = 7
@@ -180,7 +181,7 @@ Partial Class step1
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.Label4)
+        Me.GroupBox2.Controls.Add(Me.PictureBox1)
         Me.GroupBox2.Controls.Add(Me.LinkLabel1)
         Me.GroupBox2.Controls.Add(Me.LinkLabel2)
         Me.GroupBox2.Controls.Add(Me.Label6)
@@ -194,18 +195,10 @@ Partial Class step1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "軟體介紹"
         '
-        'Label4
-        '
-        Me.Label4.Image = Global.體適能報名輔助.My.Resources.Resources.cc_by_nc_nd_88x31
-        Me.Label4.Location = New System.Drawing.Point(148, 23)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(94, 42)
-        Me.Label4.TabIndex = 17
-        '
         'LinkLabel2
         '
         Me.LinkLabel2.AutoSize = True
-        Me.LinkLabel2.Location = New System.Drawing.Point(255, 48)
+        Me.LinkLabel2.Location = New System.Drawing.Point(255, 39)
         Me.LinkLabel2.Name = "LinkLabel2"
         Me.LinkLabel2.Size = New System.Drawing.Size(59, 13)
         Me.LinkLabel2.TabIndex = 16
@@ -243,6 +236,15 @@ Partial Class step1
         Me.Label7.TabIndex = 7
         Me.Label7.Text = "(不分大小寫)"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.體適能報名輔助.My.Resources.Resources.cc_by_nc_nd_88x31
+        Me.PictureBox1.Location = New System.Drawing.Point(152, 20)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(91, 39)
+        Me.PictureBox1.TabIndex = 18
+        Me.PictureBox1.TabStop = False
+        '
         'step1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
@@ -268,6 +270,7 @@ Partial Class step1
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -289,6 +292,6 @@ Partial Class step1
     Friend WithEvents Label6 As Label
     Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents LinkLabel2 As LinkLabel
-    Friend WithEvents Label4 As Label
     Friend WithEvents Label7 As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
