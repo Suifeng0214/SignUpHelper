@@ -1,5 +1,5 @@
 ﻿Public Class step3
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click, Button2.Click
         Try
             step4.WebBrowser1.Document.GetElementById("registerName").SetAttribute("value", TextBox1.Text) '
             step4.WebBrowser1.Document.GetElementById("registerSchool").SetAttribute("value", TextBox2.Text) '
@@ -59,7 +59,7 @@
     End Sub
     '61
     '495
-    Private Sub ComboBox5_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox5.SelectedIndexChanged
+    Private Sub ComboBox5_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox5.SelectedIndexChanged, ComboBox13.SelectedIndexChanged
         If ComboBox5.Text = "新北市(01)" Then
             ComboBox6.Items.Clear()
             ComboBox6.Items.Add("金山區(208)")
@@ -493,7 +493,7 @@
         End If
     End Sub
 
-    Private Sub ComboBox7_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox7.SelectedIndexChanged
+    Private Sub ComboBox7_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox7.SelectedIndexChanged, ComboBox15.SelectedIndexChanged
         If ComboBox7.Text = "新北市(01)" Then
             ComboBox8.Items.Clear()
             ComboBox8.Items.Add("金山區(208)")

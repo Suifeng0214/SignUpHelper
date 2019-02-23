@@ -41,6 +41,7 @@ Partial Class step1
         Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -156,6 +157,7 @@ Partial Class step1
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.WebBrowser1)
         Me.GroupBox1.Font = New System.Drawing.Font("新細明體", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.Blue
@@ -229,6 +231,18 @@ Partial Class step1
         Me.Label5.Size = New System.Drawing.Size(300, 305)
         Me.Label5.TabIndex = 15
         '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.White
+        Me.Label7.Font = New System.Drawing.Font("新細明體", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.Black
+        Me.Label7.Location = New System.Drawing.Point(210, 177)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(73, 12)
+        Me.Label7.TabIndex = 7
+        Me.Label7.Text = "(不分大小寫)"
+        '
         'step1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
@@ -251,6 +265,7 @@ Partial Class step1
         Me.Name = "step1"
         Me.Text = "Step.1"
         Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
@@ -275,4 +290,5 @@ Partial Class step1
     Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents LinkLabel2 As LinkLabel
     Friend WithEvents Label4 As Label
+    Friend WithEvents Label7 As Label
 End Class
