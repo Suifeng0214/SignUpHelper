@@ -23,6 +23,7 @@ Partial Class step1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(step1))
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -240,7 +241,7 @@ Partial Class step1
         '
         Me.PictureBox1.ImageLocation = "https://raw.githubusercontent.com/Suifeng0214/SignUpHelper/master/cc-by-nc-nd-88x" &
     "31.png"
-        Me.PictureBox1.Location = New System.Drawing.Point(152, 18)
+        Me.PictureBox1.Location = New System.Drawing.Point(152, 19)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(91, 32)
         Me.PictureBox1.TabIndex = 17
@@ -264,6 +265,7 @@ Partial Class step1
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "step1"
         Me.Text = "Step.1"
