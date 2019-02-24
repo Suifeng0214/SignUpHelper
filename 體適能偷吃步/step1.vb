@@ -106,7 +106,8 @@
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        If WebBrowser1.Url.ToString = "http://www.fitness.org.tw/exam/quizmain.php" Then '如果已經登入,跳轉到第二表單
+        If WebBrowser1.Url.ToString = "http://www.fitness.org.tw/exam/quizmain.php" Or
+            WebBrowser2.Url.ToString = "http://www.fitness.org.tw/exam/quizmain.php" Then '如果已經登入,跳轉到第二表單
             step2.Show()
             Me.Close()
         End If

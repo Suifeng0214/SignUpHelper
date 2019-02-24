@@ -82,11 +82,11 @@ Partial Class step2
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.Color.Fuchsia
-        Me.Label2.Location = New System.Drawing.Point(18, 57)
+        Me.Label2.Location = New System.Drawing.Point(19, 57)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(407, 12)
         Me.Label2.TabIndex = 7
-        Me.Label2.Text = "點擊順序=======================================================＞＞"
+        Me.Label2.Text = "操作順序=======================================================＞＞"
         '
         'step2
         '

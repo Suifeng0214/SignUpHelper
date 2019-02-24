@@ -22,8 +22,10 @@ Partial Class step4
     '請勿使用程式碼編輯器進行修改。
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(step4))
         Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
         'WebBrowser1
@@ -35,17 +37,22 @@ Partial Class step4
         Me.WebBrowser1.Location = New System.Drawing.Point(0, 0)
         Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
         Me.WebBrowser1.Name = "WebBrowser1"
-        Me.WebBrowser1.Size = New System.Drawing.Size(1119, 620)
+        Me.WebBrowser1.ScrollBarsEnabled = False
+        Me.WebBrowser1.Size = New System.Drawing.Size(1086, 854)
         Me.WebBrowser1.TabIndex = 0
         Me.WebBrowser1.TabStop = False
         Me.WebBrowser1.WebBrowserShortcutsEnabled = False
+        '
+        'Timer1
+        '
+        Me.Timer1.Interval = 1000
         '
         'step4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.WindowFrame
-        Me.ClientSize = New System.Drawing.Size(1119, 620)
+        Me.ClientSize = New System.Drawing.Size(1086, 854)
         Me.Controls.Add(Me.WebBrowser1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -58,4 +65,5 @@ Partial Class step4
     End Sub
 
     Friend WithEvents WebBrowser1 As WebBrowser
+    Friend WithEvents Timer1 As Timer
 End Class
